@@ -2,12 +2,14 @@
 ShenJS Online Comminucation
 ----
 
+Page http://jsconf.cn/shenjs-nav/
+
 ### Build Page
 
 Built with [CirruScript](http://script.cirru.org/).
 
 ```
-npm i --save
+npm i
 gulp html
 ```
 

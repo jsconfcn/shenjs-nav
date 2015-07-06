@@ -17,7 +17,7 @@ var text $ \ (x)
   return $ span null x
 
 var
-  hashUrl :http://weibo.com/p/1008088a5b5c973442df86d68a00b5da0926d0?k=深%20js
+  hashUrl :http://weibo.com/p/100808ab728ac94c407edd799c4f95809d025f
   weiboUrl :http://weibo.com/u/5070687652
   repoUrl :https://github.com/jsconfcn/shenjs-nav
   f2eUrl :http://f2e.im/node/shenjs
