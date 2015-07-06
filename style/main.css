@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    padding: 80px 20px;
+    font-family: HelveticaNeue Light, Helvetica, Hiragino Sans GB, MicroSoft Yahei, Wenquanyi micro hei, sans-serif;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+body * {}
+
+.header {
+    font-size: 36px;
+}
+
+.line {}
+
+.line * + * {
+    margin-left: 1em;
+}
+
+.section {
+    margin: 40px 0 40px;
+}
+
+.section .heading {
+    color: hsl(0, 0%, 60%);
+}
+
+.section .table {
+    margin-left: 1em;
+    font-size: 18px;
+}
+
+.footer {
+    font-size: 14px;
+}
