@@ -38,7 +38,7 @@ var
           link weiboUrl :@JSConfChina
         line
           text ":话题"
-          link hashUrl ":#深JS#"
+          link hashUrl ":#shenjs#"
         line
           text ":微信群"
           link qrCode ":扫描二维码(07-13)"
