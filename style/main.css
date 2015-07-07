@@ -20,16 +20,43 @@ body * {}
 }
 
 .section {
-    margin: 40px 0 40px;
+    margin: 60px 0 40px;
 }
 
 .section .heading {
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 81%);
+    margin-bottom: 1em;
 }
 
 .section .table {
-    margin-left: 1em;
     font-size: 18px;
+    line-height: 2.4em;
+}
+
+.table .line + .line {
+    border-top: 1px solid hsl(0, 0%, 87%);
+}
+
+.section .name {
+    color: hsl(0, 0%, 47%);
+    display: inline-block;
+    width: 100px;
+}
+
+.section .link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.section .count {
+    color: hsl(0, 100%, 100%);
+    background-color: hsla(30, 100%, 50%, 0.58);
+    display: inline-block;
+    padding: 0 0.5em;
+    border-radius: 20px;
+    line-height: 2em;
+    font-size: 12px;
+    vertical-align: middle;
 }
 
 .footer {

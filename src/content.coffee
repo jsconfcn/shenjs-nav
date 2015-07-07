@@ -1,12 +1,16 @@
 
-stir = require 'stir-template'
-{div, span, a} = stir
+deku = require 'deku'
+
+div = deku.element.bind null, 'div'
+span = deku.element.bind null, 'span'
+img = deku.element.bind null, 'img'
+a = deku.element.bind null, 'a'
 
 link = (url, text) ->
-  a href: url, target: '_blank', text
+  a class: 'link', href: url, target: '_blank', text
 
-line = (a, b) ->
-  div class: 'line', a, b
+line = (a...) ->
+  div class: 'line', a...
 
 text = (x) ->
   span null, x
@@ -21,34 +25,43 @@ jianliaoUrl = 'https://jianliao.com/v1/via/b0743480un'
 slackUrl = 'https://shenjs.herokuapp.com/'
 qqCode = 'images/qq-qrcode.png'
 
-module.exports = ->
+module.exports = render: ->
   div class: 'page-content',
-    div class: 'header', '深JS导航'
+    div class: 'header',
+      img src: './images/shenjs.png', '深JS导航'
+
     div class: 'section',
       div class: 'heading', "官方"
       div class: 'table',
-        line (text "微博"),
+        line (span class: 'name', "微博"),
           link weiboUrl, '@JSConfChina'
-        line (text "话题"),
+          span class: 'count', '970+'
+        line (span class: 'name', "话题"),
           link hashUrl, "#shenjs#"
-        line (text "微信群"),
-          link qrCode, "扫描二维码(07-13)"
+          span class: 'count', '1+'
+        line (span class: 'name', "微信群"),
+          link qrCode, "扫描二维码"
+          span class: 'count', '60+'
 
     div class: 'section',
       div class: 'heading', "论坛"
       div class: 'table',
-        line (text "F2E.im"),
+        line (span class: 'name', "F2E.im"),
           link f2eUrl, 'shenjs'
+          span class: 'count', '1+'
 
     div class: 'section',
       div class: 'heading', "聊天工具"
       div class: 'table',
-        line (text "BearyChat"),
+        line (span class: 'name', "BearyChat"),
           link bearyChatUrl, "jsconfcn"
-        line (text "简聊"),
+          span class: 'count', '5+'
+        line (span class: 'name', "简聊"),
           link jianliaoUrl, "深JS"
-        line (text 'QQ'),
-          link qqCode, "深JS群 473719145"
+          span class: 'count', '1+'
+        line (span class: 'name', '深JS QQ群'),
+          link qqCode, "473719145"
+          span class: 'count', '5+'
 
     div class: 'footer',
-      link repoUrl, "Fork page"
+      a href: repoUrl, target: '_blank', "Fork page"
