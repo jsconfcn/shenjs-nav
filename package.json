@@ -12,9 +12,9 @@
   "author": "jiyinyiyong",
   "license": "MIT",
   "devDependencies": {
-    "cirru-script": "^0.2.3",
+    "coffee-script": "^1.9.3",
     "gulp": "^3.9.0",
-    "gulp-cirru-script": "^0.1.1",
+    "gulp-coffee": "^2.3.1",
     "stir-template": "^0.1.4"
   }
 }
