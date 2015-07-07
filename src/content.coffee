@@ -38,7 +38,7 @@ module.exports = render: ->
           span class: 'count', '970+'
         line (span class: 'name', "话题"),
           link hashUrl, "#shenjs#"
-          span class: 'count', '1+'
+          span class: 'count', '20+'
         line (span class: 'name', "微信群"),
           link qrCode, "扫描二维码"
           span class: 'count', '60+'
