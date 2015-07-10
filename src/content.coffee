@@ -28,20 +28,21 @@ qqCode = 'images/qq-qrcode.png'
 module.exports = render: ->
   div class: 'page-content',
     div class: 'header',
-      img src: './images/shenjs.png', '深JS导航'
+      a href: 'http://2015.jsconf.cn/',
+        img src: './images/shenjs.png', '深JS导航'
 
     div class: 'section',
       div class: 'heading', "官方"
       div class: 'table',
         line (span class: 'name', "微博"),
           link weiboUrl, '@JSConfChina'
-          span class: 'count', '970+'
+          span class: 'count', '1000+'
         line (span class: 'name', "话题"),
           link hashUrl, "#shenjs#"
-          span class: 'count', '20+'
+          span class: 'count', '30+'
         line (span class: 'name', "微信群"),
           link qrCode, "扫描二维码"
-          span class: 'count', '60+'
+          span class: 'count', '140+'
 
     div class: 'section',
       div class: 'heading', "论坛"
@@ -61,7 +62,7 @@ module.exports = render: ->
           span class: 'count', '1+'
         line (span class: 'name', '深JS QQ群'),
           link qqCode, "473719145"
-          span class: 'count', '5+'
+          span class: 'count', '40+'
 
     div class: 'footer',
       a href: repoUrl, target: '_blank', "Fork page"
