@@ -36,13 +36,13 @@ module.exports = render: ->
       div class: 'table',
         line (span class: 'name', "微博"),
           link weiboUrl, '@JSConfChina'
-          span class: 'count', '1000+'
+          span class: 'count', '1040+'
         line (span class: 'name', "话题"),
           link hashUrl, "#shenjs#"
-          span class: 'count', '30+'
+          span class: 'count', '80+'
         line (span class: 'name', "微信群"),
           link qrCode, "扫描二维码"
-          span class: 'count', '140+'
+          span class: 'count', '300+'
 
     div class: 'section',
       div class: 'heading', "论坛"
@@ -59,10 +59,10 @@ module.exports = render: ->
           span class: 'count', '5+'
         line (span class: 'name', "简聊"),
           link jianliaoUrl, "深JS"
-          span class: 'count', '1+'
+          span class: 'count', '10+'
         line (span class: 'name', '深JS QQ群'),
           link qqCode, "473719145"
-          span class: 'count', '40+'
+          span class: 'count', '90+'
 
     div class: 'footer',
       a href: repoUrl, target: '_blank', "Fork page"
